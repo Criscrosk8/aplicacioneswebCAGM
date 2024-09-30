@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro de Mascotas</title>
+    <style>
+        form {
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid black;
+            background-color: lightgray;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: rgb(255, 0, 0);
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Registro Mr Olympia</h1>
+    <form>
+        <label for="nombre">Nombre Completo:</label>
+        <input type="text" id="nombre" name="nombre">
+
+        <label for="tipo">Tipo de boleto</label>
+        <select id="tipo" name="tipo">
+            <option value="perro">Estandar</option>
+            <option value="gato">VIP</option>
+        </select>
+
+        <label>¿Quien crees que gane?</label><br>
+        <input type="radio" id="Chris Bumstead" name="competidor" value="Chris Bumstead"> Chris Bumstead
+        <input type="radio" id="Ramon Rocha" name="competidor" value="Ramon Rocha"> Ramon Rocha
+        <input type="radio" id="Urs Kalecinski" name="competidor" value="Urs Kalecinski"> Urs Kalecinski
+        <input type="radio" id="Wesley Vissers" name="competidor" value="Wesley Vissers"> Wesley Vissers
+
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
