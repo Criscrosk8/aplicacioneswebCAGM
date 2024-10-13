@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro a Webinar</title>
+</head>
+<body>
+    <h1>Registro al Webinar</h1>
+    <form action="procesarwebinar.php" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" required><br><br>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required><br><br>
+
+        <label>¿Cómo te enteraste del webinar?</label><br>
+        <input type="radio" id="fuente1" name="fuente" value="Redes Sociales">
+        <label for="fuente1">Redes Sociales</label><br>
+        <input type="radio" id="fuente2" name="fuente" value="Amigos">
+        <label for="fuente2">Amigos</label><br>
+        <input type="radio" id="fuente3" name="fuente" value="Publicidad">
+        <label for="fuente3">Publicidad</label><br><br>
+
+        <label for="tema">Temas de interés:</label>
+        <select id="tema" name="tema">
+            <option value="Tecnología">Tecnología</option>
+            <option value="Ciencia">Ciencia</option>
+            <option value="Negocios">Negocios</option>
+        </select><br><br>
+
+        
+        <label>Opciones de participación:</label><br>
+        <input type="checkbox" id="preguntas" name="participacion[]" value="Preguntas">
+        <label for="preguntas">Preguntas</label><br>
+        <input type="checkbox" id="comentarios" name="participacion[]" value="Comentarios">
+        <label for="comentarios">Comentarios</label><br>
+        <input type="checkbox" id="encuesta" name="participacion[]" value="Encuesta">
+        <label for="encuesta">Encuesta</label><br><br>
+
+        <label for="comentarios_adicionales">Comentarios adicionales:</label><br>
+        <textarea id="comentarios_adicionales" name="comentarios_adicionales" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Registrarse">
+    </form>
+</body>
+</html>
